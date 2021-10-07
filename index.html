@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>parcial</title>
+<style>
+.tema{
+	position: absolute;
+	top: 20px;
+	height: 70px;
+	width: 180px;
+	background: blue;
+    border-radius: 50px ;
+}
+
+.texto1{
+	position: absolute;
+	top: 80px;
+	left: 200px;
+	height: 460px ;
+	width: 900px;
+	background: cyan;
+	transition:;
+	display:none;
+}
+
+.cerrar1{
+	position: absolute;
+	top: 380px;
+	left: 670px;
+	height: 60px;
+	width: 180px;
+	background: blue;
+
+}
+
+.tema2{
+	position: absolute;
+	top: 560px;
+	left: 1150px;
+	height: 70px;
+	width: 180px;
+	background: blue;
+    border-radius: 50px ;
+
+}
+
+.texto2{
+	position: absolute;
+	top: 80px;
+	left: 200px;
+	height: 460px;
+	width: 930px;
+	background: cyan;
+	display: none;
+}
+.cerrar2{
+	position: absolute;
+	top: 380px;
+	left: 670px;
+	height: 60px;
+	width: 180px;
+	background: blue;
+
+}
+.play{
+    background: url('boton.jpg');
+    position: absolute;
+    top: 30px;
+     right: 60px;
+     height: 100px;
+    width: 100px;
+    border: solid 5px black;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body bgcolor="black">
+	<div><audio id="playy" src="crybaby.mp3" autoplay preload loop ></audio>
+    <button class="play" onclick="document.getElementById('playy').play()"></button>
+ </div>
+
+<div class="tema" id="tema"onclick="document.getElementById('texto1').style.display='block'"><h1><center>Tema 1</center></div></h1>
+
+<div class="texto1" id="texto1"><h2><center>FUTBOL</center></h2><br><h2>El fútbol es un deporte de equipo jugado entre dos conjuntos de once jugadores cada uno y algunos árbitros que se ocupan de que las normas se cumplan correctamente. Es ampliamente considerado el deporte más popular del mundo, pues lo practican unas 270 millones de personas.</h2><center><img src="jugadores.jpg"></center>
+
+ <div class="cerrar1" id="cerrar1"onclick="document.getElementById('texto1').style.display='none'"><h2><div>
+    <center>Cerrar</center></h2></div>
+        </div>
+      </div>
+</div>
+
+
+<div class="tema2" id="tema2"onclick="document.getElementById('texto2').style.display='block'"><h1><center>Tema 2</center></div></h1>
+
+        <div class="texto2" id="texto2"><h1><center>MEJORES JUGADORES</center></h1><br><h2>1. LIONEL MESSI<br>2.CR7<br>3.MARADONA<br>4.PELE<br>5.RONALDINHO</h2><div style="position: absolute;right:100px;top:100px;"><img src="quepro.jpg"></div> 
+
+     <div class="cerrar2" id="cerrar2"onclick="document.getElementById('texto2').style.display='none'"><h1><div><center>Cerrar</center></h1></div>
+ </div>         
+      </div>
+    </div>
+     
+</body>
+</html>
